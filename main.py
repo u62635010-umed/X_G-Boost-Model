@@ -5,7 +5,7 @@ import pandas as pd
 # Load the trained XGBoost model
 try:
     with open('xgb_tuned_model.pkl', 'rb') as f:
-        xgb_tuned = pickle.load(f)
+        xgb_tuned_model = pickle.load(f)
     st.success("XGBoost model loaded successfully!")
 except FileNotFoundError:
     st.error("Error: 'xgb_tuned_model.pkl' not found. Please ensure the model file is in the same directory.")
