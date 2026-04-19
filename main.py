@@ -56,7 +56,7 @@ if st.button("Predict Exam Score"):
     }])
 
     # Make prediction
-    prediction = xgb_tuned.predict(input_data)[0]
+    prediction = xgb_tuned_model.predict(input_data)[0]
 
     st.success(f"Predicted Exam Score: {prediction:.2f}")
 
